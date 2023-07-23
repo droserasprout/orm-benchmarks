@@ -5,7 +5,7 @@ description = "Benchmarks for ORMs"
 authors = ["long2ice <long2ice@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.11,<3.12"
 # ORM's
 django = "*"
 sqlalchemy = "*"
@@ -16,15 +16,17 @@ tortoise-orm = "*"
 # DB drivers
 asyncpg = "*"
 asyncmy = "*"
-mysqlclient = "*"
+# mysqlclient = "*"
 psycopg2 = "*"
 # Recommended accelerators
 uvloop = "*"
 python-rapidjson = "*"
+setuptools = "^68.0.0"
+dipdup = {path = "../dipdup", develop = true}
 
 [tool.poetry.dev-dependencies]
 # Testing tools
-vmprof = "*"
+# vmprof = "*"
 py-spy = "*"
 tox = "*"
 flake8 = "*"
